@@ -713,6 +713,25 @@
             <h2>Artikel 150</h2>
             <p>Ein Bro hinterlässt die Welt ein bisschen besser, als er sie vorgefunden hat.</p>
         </div>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const articles = document.querySelectorAll(".regel");
+
+            articles.forEach(article => {
+                article.addEventListener("mouseover", () => {
+                    article.style.backgroundColor = "#f0f0f0";
+                    article.style.border = "2px solid blue";
+                });
+
+                article.addEventListener("mouseout", () => {
+                    article.style.backgroundColor = "";
+                    article.style.border = "";
+                });
+            });
+        });
+    </script>
+        
     <footer>
         <p>&copy; 2025 Der Bro Code Website. Von Bros, für Bros.</p>
     </footer>
