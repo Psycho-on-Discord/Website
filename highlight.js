@@ -1,4 +1,4 @@
-const articles = document.querySelectorAll(".container");
+const articles = document.querySelectorAll(".regel");
 
 articles.forEach(article => {
   article.addEventListener("mouseover", () => {
